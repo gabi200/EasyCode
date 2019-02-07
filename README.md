@@ -1,2 +1,2 @@
 # EasyCode
-Learn various programmiing languages now!
+Learn various programming languages now!
