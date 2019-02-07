@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- EasyCode / Powered by Gabi Web App Template -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<title>EasyCode</title>
+<script src="script.js"></script>
+</head>
+<body>
+<div id="bar">
+<button onclick="toggle_view('menu')" id="menu_btn"><i class="material-icons">menu</i></button>
+EasyCode
+<button onclick="alert(info_msg)" id="info_btn"><i class="material-icons">info</i></button>
+</div>
+<div id="menu">
+<b style="font-size:20px;">Menu</b><br>
+<a class="menu_item" href="#">Main Page</a><br>
+<a class="menu_item" href="res/html_course/index.html">HTML Course</a>
+</div>
+Hello,<a id="name1"></a>! With this app you'll learn programming fast and easy. Select a course:<br>
+<div class="box">
+<img class="box_img" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg">
+<a href="res/html_course/index.html"><b>HTML5 Course</b></a><br><i>HTML defines the structure of a webpage.</i>
+</div>
+<div class="box">
+<img class="box_img" src="https://www.abouthack.com/wp-content/uploads/2014/07/css3_logo.png">
+<b>CSS Course</b><br><i>CSS defines the style of a webpage.</i><b style="color:red">COMING SOON</b>
+</div>
+<div class="box">
+<img class="box_img" src="https://i2.wp.com/www.nuimedia.com/wp-content/uploads/2017/01/javascript-logo.png?ssl=1">
+<b>JavaScript Course</b><br><i>JavaScript defines the behavior of the webpages.</i><b style="color:red">COMING SOON</b>
+</div>
+</div>
+<script>
+if(navigator.onLine){}
+else{document.write("<b>Error!</b> Please check your internet connection.");}</script>
+<script>document.getElementById("name1").innerHTML = localStorage.name;</script>
+</body>
+</html>

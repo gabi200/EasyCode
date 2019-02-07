@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- EasyCode / Powered by Gabi Web App Template -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="../../style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<title>EasyCode</title>
+<script src="../../script.js"></script>
+</head>
+<body>
+<div id="bar">
+<button onclick="toggle_view('menu')" id="menu_btn"><i class="material-icons">menu</i></button>
+EasyCode
+<button onclick="alert(info_msg)" id="info_btn"><i class="material-icons">info</i></button>
+</div>
+<div id="menu">
+<b style="font-size:20px;">Menu</b><br>
+<a class="menu_item" href="../../index.html">Main Page</a><br>
+<a class="menu_item" href="#">HTML Course</a>
+</div>
+<!-- Page Content Start -->
+<button onclick="open_editor()" class="floating_button">Code Editor</button>
+<h1>4.Lists & Tables</h1>
+<h3>Lists</h3>
+<p>There are two types of lists: <b>ordered</b> and <b>unordered</b>.</p>
+<h4>a)Ordered Lists</h4>
+<p>Syntax:</p>
+<div class="code"><xmp>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+</xmp></div>
+<p>Result:</p>
+<div class="dynamic_box">
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+</div>
+<h4>Syntax explained</h4>
+<ul>
+<li><tt>&ltol></tt> - the tag for ordered lists</li>
+<li><tt>&ltli></tt> - this tag is for list items</li>
+</ul>
+<h4>b)Unordered lists</h4>
+<p>Syntax:</p>
+<div class="code"><xmp>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ul>
+</xmp></div>
+<p>Result:</p>
+<div class="dynamic_box">
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ul>
+</div>
+<h3>Tables</h3>
+<p>The structure of a table:</p>
+<div class="code"><xmp>
+<table>
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+<tr>
+<td>John</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Michael</td>
+<td>31</td>
+</tr></table>
+</xmp></div>
+<p>Result:</p>
+<div class="dynamic_box">
+<table class="no_border">
+<tr class="no_border">
+<th class="no_border">Name</th>
+<th class="no_border">Age</th>
+</tr>
+<tr class="no_border">
+<td class="no_border">John</td>
+<td class="no_border">15</td>
+</tr>
+<tr class="no_border">
+<td class="no_border">Michael</td>
+<td class="no_border">31</td>
+</tr></table>
+</div>
+<h4>Syntax explained</h4>
+<ul>
+<li><tt>table</tt> - the tag used to declare a table</li>
+<li><tt>th</tt> - table header,content in this element is bold and centered by default</li>
+<li><tt>tr</tt> - table row</li>
+<li><tt>td</tt> - table data (content)</li>
+</ul>
+<div class="info_box">As you have seen,tables don't have borders by default,but you can add them using the <tt>style</tt> attribute.</div>
+<p>To add a border(CSS code): <div class="code">table,th,td { border:1px solid black;<br>}</div></p>
+<div class="info_box">You'll learn more about CSS in the next lessons and in the CSS Course</div>
+<p>Result:</p>
+<div class="dynamic_box">
+<table >
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+<tr>
+<td>John</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Michael</td>
+<td>31</td>
+</tr></table>
+</div>
+<!-- Page content end -->
+<a href="#">Jump to top</a><button style="margin:5px" onclick="location.href='lesson3.html'"><- Previous lesson</button><button style="float:right;margin:5px" onclick="location.href='lesson5.html'">Next lesson -></button>
+<script>
+if(navigator.onLine){}
+else{document.write("<b>Error!</b> Please check your internet connection.");}</script>
+</body>
+</html>

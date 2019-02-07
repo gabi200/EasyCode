@@ -1,0 +1,129 @@
+body {
+font-family:"ABeeZee";
+background-color:lightcyan;
+margin:0px;
+margin-left:5px;
+}
+button {
+border:0px;
+color:white;
+background-color:#4286f4;
+outline-color:transparent;
+padding:10px;
+border-radius:10px;
+}
+button:hover {background-color: #0d5bd9}
+.white_button {
+color:black;
+background-color:white;
+border-color:gray;
+padding:10px;
+border-radius:10px;
+}
+#bar {
+background:linear-gradient(to right,cyan,blue);
+padding:10px;
+height:6.5mm;
+text-align:left;
+vertical-align:center;
+color:white;
+font-size:22px;
+margin-bottom:5px;
+margin-left:-5px;
+}
+#menu_btn {
+float:left;
+background-color:transparent;
+outline-color:cyan;
+padding:2px;
+padding-right:4px;
+}
+#menu {
+text-align:center;
+display:none;
+background-color:#4286f4;
+animation-name:slide;
+animation-duration:500ms;
+margin-top:-5px;
+margin-bottom:5px;
+margin-left:-5px;
+color:white;
+}
+@keyframes slide {
+0% {height:0px;}
+5% {height:5px;}
+10% {height:9px;}
+15% {height:14px;}
+20% {height:19px;}
+25% {height:24px;}
+30% {height:29px;}
+35% {height:34px;}
+40% {height:39px;}
+45% {height:44px;}
+50% {height:49px;}
+55% {height:54px;}
+60% {height:59px;}
+65% {height:64px;}
+}
+.menu_item {
+color:white;
+}
+#info_btn {
+float:right;
+background-color:transparent;
+outline-color:blue;
+padding:2px;
+}
+.code {
+font-family:monospace;
+background-color:white;
+margin:10px;
+width:16cm;
+border:1.5px solid #4286f4;
+padding:2.5px;
+}
+.box {
+height:1.5cm;
+width:13cm;
+margin:10px;
+border:1.5px solid #4286f4;
+background-color:white;
+padding:2.5px;
+}
+.dynamic_box {
+margin:10px;
+width:16cm;
+border:1.5px solid #4286f4;
+background-color:white;
+padding:2.5px;
+}
+.box_img {
+float:left;
+height:100%;
+padding-left:-2.5px;
+width:20%;
+}
+a {
+color:#4286f4;
+}
+.info_box {
+margin:10px;
+width:16cm;
+border:1.5px solid orange;
+background-color:lightyellow;
+padding:2.5px;
+}
+.hidden {
+display:none;
+}
+th,td,table {
+border:1px solid black;
+}
+.no_border {
+border:none;
+}
+.floating_button {
+position: fixed;
+top: 2.5cm;
+right: 4mm;
+}

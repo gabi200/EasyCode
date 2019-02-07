@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Code Editor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link href="../../style.css" rel="stylesheet">
+<script src="../../script.js"></script>
+</head>
+<body>
+	<b>Preview</b>
+<button onclick="window.location.href='code.html'">Go back</button>
+<br><br>
+<div id="text"></div>
+<script>
+	document.getElementById("text").innerHTML = localStorage.getItem("text");
+</script>
+</body>
+</html>

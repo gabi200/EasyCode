@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- EasyCode / Powered by Gabi Web App Template -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="../../style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<title>EasyCode</title>
+<script src="../../script.js"></script>
+</head>
+<body>
+<div id="bar">
+<button onclick="toggle_view('menu')" id="menu_btn"><i class="material-icons">menu</i></button>
+EasyCode
+<button onclick="alert(info_msg)" id="info_btn"><i class="material-icons">info</i></button>
+</div>
+<div id="menu">
+<b style="font-size:20px;">Menu</b><br>
+<a class="menu_item" href="../../index.html">Main Page</a><br>
+<a class="menu_item" href="#">HTML Course</a>
+</div>
+<!-- Page Content Start -->
+<button onclick="open_editor()" class="floating_button">Code Editor</button>
+<h1>2.Text Styling</h1>
+<h4>Bold Text</h4>
+<p>Syntax:</p>
+<div class="code">&ltb>This is bold text&lt/b></div>
+Ex.: <div class="dynamic_box"><b>This is bold text</b></div>
+<h4>Italic Text</h4>
+<p>Syntax:</p>
+<div class="code">&lti>This is italic text&lt/i></div>
+Ex.: <div class="dynamic_box"><i>This is italic text</i></div>
+<h4>Underlined Text</h4>
+<p>Syntax:</p>
+<div class="code">&ltu>This is underlined text&lt/u></div>
+Ex.: <div class="dynamic_box"><u>This is underlined text</u></div>
+<h4>Marked/highlighted Text</h4>
+<p>Syntax:</p>
+<div class="code">&ltmark>This is highlighted text&lt/mark></div>
+Ex.: <div class="dynamic_box"><mark>This is highlighted text</mark></div>
+<h4>Deleted(removed) Text</h4>
+<p>Syntax:</p>
+<div class="code">&ltdel>This is removed text&lt/del></div>
+Ex.: <div class="dynamic_box"><del>This is removed text</del></div>
+<h4>Subscripted and Superscripted Text</h4>
+<p>Syntax:</p>
+<div class="code">&ltsub>Text&lt/sub><br>&ltsup>Text&lt/sup></div>
+Ex.: <div class="dynamic_box">This is <sub>subscripted</sub> text.<br>
+This is <sup>superscripted</sup> text.
+</div>
+<!-- Page content end -->
+<a href="#">Jump to top</a><button style="margin:5px" onclick="location.href='lesson1.html'"><- Previous lesson</button><button style="float:right;margin:5px" onclick="location.href='lesson3.html'">Next lesson -></button>
+<script>
+if(navigator.onLine){}
+else{document.write("<b>Error!</b> Please check your internet connection.");}</script>
+</body>
+</html>

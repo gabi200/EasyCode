@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+// save code in editor
+function doSave(){
+	//Set the item in doSave()
+    localStorage.setItem("text", text.value);
+}
+
+function doLoad(){
+	//Get the item in doLoad()
+    text.value = localStorage.getItem("text");
+}
+
+//When the window loads...
+window.onload = function(){
+    saveButton = document.getElementById("save");
+    saveButton.onclick = doSave;
+    loadButton = document.getElementById("load");
+    //loadButton.onclick = doLoad;
+    doLoad()
+    textarea = document.getElementById("text");
+};
+</script>
+
+<style>
+button { margin-top:6px; margin-bottom: 6px; }
+</style>
+
+<title>Code Editor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link href="../../style.css" rel="stylesheet">
+<script src="../../script.js"></script>
+</head>
+<body>
+	<button>Code</button>
+<button onclick="window.location.href='preview.html'">Preview</button>
+<button id="save">Save</button>
+<BR>
+<textarea id="text" rows="25" cols="88"></textarea>                                        
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- EasyCode / Powered by Gabi Web App Template -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="../../style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<title>EasyCode</title>
+<script src="../../script.js"></script>
+</head>
+<body>
+<div id="bar">
+<button onclick="toggle_view('menu')" id="menu_btn"><i class="material-icons">menu</i></button>
+EasyCode
+<button onclick="alert(info_msg)" id="info_btn"><i class="material-icons">info</i></button>
+</div>
+<div id="menu">
+<b style="font-size:20px;">Menu</b><br>
+<a class="menu_item" href="../../index.html">Main Page</a><br>
+<a class="menu_item" href="#">HTML Course</a>
+</div>
+<h1>HTML Course</h1>
+<p>Welcome to the HTML Course. HTML comes from <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage.<br>
+This is used in every  website and web application.</p>
+<button onclick="open_editor()" class="floating_button">Code Editor</button>
+Let's see the structure of a HTML page:
+<div class="code"> <!--<xmp> -->
+&lthtml&gt<br>
+&lthead&gt<br>
+&lttitle&gtPage Title&lt/title&gt<br>
+&lt/head&gt<br>
+&ltbody&gt<br>
+Webpage content goes here...<br>
+&lt/body&gt<br>
+&lt/html&gt<br>
+</div>
+<p class="info_box">Note: none of the tags are mandatory,but I don't recommend you to omit them.</p>
+<h4>Example explained</h4>
+<p>
+<tt>&lthtml></tt> - the start of the HTML file(the root element)<br>
+<tt>&lthead></tt> - this element contains meta information about the page<br>
+<tt>&ltbody></tt> - this element contains the visibile content<br>
+</p>
+
+<p class="info_box">Note: in a HTML document,extra spaces are ignored.</p>
+For example <p class="code">Hello<br>world</p> will be displayed as... <p class="dynamic_box">Hello world</p> ...unless you use <tt>&ltbr></tt>
+<h4>HTML elements</h4>
+<p>A HTML element is composed of: <xmp class="dynamic_box"><tagname>element content</tagname></xmp></p>
+<h4>Editing HTML files</h4>
+<p>You can edit HTML files with any notepad or text editing app. HTML files have <tt>.html</tt> extension.</p>
+<a href="#">Jump to top</a><button style="float:right;margin:5px" onclick="location.href='lesson1.html'">Next lesson -></button>
+<script>
+if(navigator.onLine){}
+else{document.write("<b>Error!</b> Please check your internet connection.");}</script>
+</body>
+</html>

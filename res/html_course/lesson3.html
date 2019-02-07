@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- EasyCode / Powered by Gabi Web App Template -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="../../style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<title>EasyCode</title>
+<script src="../../script.js"></script>
+</head>
+<body>
+<div id="bar">
+<button onclick="toggle_view('menu')" id="menu_btn"><i class="material-icons">menu</i></button>
+EasyCode
+<button onclick="alert(info_msg)" id="info_btn"><i class="material-icons">info</i></button>
+</div>
+<div id="menu">
+<b style="font-size:20px;">Menu</b><br>
+<a class="menu_item" href="../../index.html">Main Page</a><br>
+<a class="menu_item" href="#">HTML Course</a>
+</div>
+<!-- Page Content Start -->
+<button onclick="open_editor()" class="floating_button">Code Editor</button>
+<h1>3.HTML Attributes</h1>
+<p>Attributes provide additional information about HTML elements.</p>
+<ul>
+<li>All HTML elements can have attributes</li>
+<li>Attributes are always specified in <strong>the start tag</strong>
+<li>Attributes usually come in name/value pairs like <tt>name="value"</tt></li>
+</ul>
+<h4>Attribute Examples</h4>
+<h4>The <tt>href</tt> attribute</h4>
+<p>The <tt>href</tt> attribute is used in links,defined with the <tt>&lta></tt> tag.</p>
+Ex. <div class="code"><xmp><a href="https:/google.com">Click here</a></xmp></div>
+<h4>The <tt>src</tt> attribute</h4>
+<p>The <tt>src</tt> attribute is used to specify the filename of the image(in the <tt>&ltimg></tt> tag).</p>
+Ex. <div class="code"><xmp><img src="/folder/file.png"></xmp></div>
+<h4>The <tt>width</tt> and <tt>height</tt> attributes</h4>
+<p>The <tt>width</tt> and <tt>height</tt> attributes are used to specify the width and height of HTML elements. They are commonly used on images.</p>
+Ex. <div class="code"><xmp><img width="100px" height="100px"</xmp><br><xmp>src="file.jpg"></xmp></div>
+<div class="info_box">Note: width and height can be specified in many measurement units like <i>px , cm ,mm ,em</i>.</div>
+<h4>The <tt>alt</tt> attribute</h4>
+<p>The <tt>alt</tt> attribute is used to specify alternative text in case a image can't be loaded.</p>
+Ex. <div class="code"><xmp><img src="cat.png" alt="Cat Image"></xmp></div>
+<!-- Page content end -->
+<a href="#">Jump to top</a><button style="margin:5px" onclick="location.href='lesson2.html'"><- Previous lesson</button><button style="float:right;margin:5px" onclick="location.href='lesson4.html'">Next lesson -></button>
+<script>
+if(navigator.onLine){}
+else{document.write("<b>Error!</b> Please check your internet connection.");}</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- EasyCode / Powered by Gabi Web App Template -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="../../style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<title>EasyCode</title>
+<script src="../../script.js"></script>
+</head>
+<body>
+<div id="bar">
+<button onclick="toggle_view('menu')" id="menu_btn"><i class="material-icons">menu</i></button>
+EasyCode
+<button onclick="alert(info_msg)" id="info_btn"><i class="material-icons">info</i></button>
+</div>
+<div id="menu">
+<b style="font-size:20px;">Menu</b><br>
+<a class="menu_item" href="../../index.html">Main Page</a><br>
+<a class="menu_item" href="#">HTML Course</a>
+</div>
+<button onclick="open_editor()" class="floating_button">Code Editor</button>
+<h1>1.Basic HTML Elements</h1>
+<h4>Headings</h4>
+<p>HTML headings are defined with <tt>&lth1></tt> to <tt>&lth6></tt> tags.</p>
+<div class="dynamic_box">
+<h1>Big heading(h1)</h1>
+<h2>H2 heading</h2>
+<b>...</b>
+<h6>Little heading(h6)</h6>
+</div>
+<h4>Paragraphs</h4>
+<p>Paragraphs are defined with the <tt>&ltp></tt> tag.</p>
+<p>Syntax: <div class="dynamic_box"><xmp><p>This is a paragraph</p></xmp></div>
+<p>Example:</p>
+<div class="dynamic_box"><p>This is a paragraph.</p><p>This is another paragraph.</div>
+<h4>Links</h4>
+<p>Syntax:</p>
+<div class="dynamic_box"><xmp><a href="https://www.google.com">Click here to go to Google</a></xmp></div>
+<p>Example:</p>
+<div class="dynamic_box"><a href="http://google.com">Click here to go to Google</a></div>
+<h4>Images</h4>
+<p>Syntax:</p>
+<div class="dynamic_box"><xmp><img src="image_address"></xmp></div>
+<p>Example:</p>
+<div class="dynamic_box"><img style="width;2cm;height:2cm" src="http://www.iconhot.com/icon/png/brush-intense-messenger/256/msn-web-2.png"></div>
+<h4>Line break (new line)</h4>
+<p>The element used for line breaks is <tt>&ltbr></tt>.</p>
+<p>Syntax:</p>
+<div class="dynamic_box"><xmp>Hey!<br> I am learning HTML</xmp></div>
+<p>Example:</p>
+<div class="dynamic_box">Hey!<br>I am learning HTML</div>
+<div class="info_box">Elements like <tt>&ltbr></tt> and <tt>&ltimg></TT> are empty elements (they don't have content) and they have no end tag.</div>
+<a href="#">Jump to top</a><button style="margin:5px" onclick="location.href='index.html'"><- Previous lesson</button><button style="float:right;margin:5px" onclick="location.href='lesson2.html'">Next lesson -></button>
+<script>
+if(navigator.onLine){}
+else{document.write("<b>Error!</b> Please check your internet connection.");}</script>
+</body>
+</html>

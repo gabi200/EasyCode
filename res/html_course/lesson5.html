@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- EasyCode / Powered by Gabi Web App Template -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="../../style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<title>EasyCode</title>
+<script src="../../script.js"></script>
+</head>
+<body>
+<div id="bar">
+<button onclick="toggle_view('menu')" id="menu_btn"><i class="material-icons">menu</i></button>
+EasyCode
+<button onclick="alert(info_msg)" id="info_btn"><i class="material-icons">info</i></button>
+</div>
+<div id="menu">
+<b style="font-size:20px;">Menu</b><br>
+<a class="menu_item" href="../../index.html">Main Page</a><br>
+<a class="menu_item" href="#">HTML Course</a>
+</div>
+<!-- Page Content Start -->
+<button onclick="open_editor()" class="floating_button">Code Editor</button>
+<h1>5.The <tt>style</tt> attribute and CSS</h1>
+<h3>The <tt>style</tt> attribute</h3>
+<p>With the <tt>style</tt> attribute you can modify the style of individual elements using CSS (<b>C</b>ascading <b>S</b>tyle <b>S</b>heets).</p>
+<p>CSS syntax is the following: <tt>name:value;</tt></p>
+<div class="code"><xmp>
+<div style="width:100px;height:100px;</xmp><br><xmp>background-color:red;color:white">
+Hello!</div></xmp></div>
+<p>Result:</p>
+<div class="dynamic_box">
+<div style="width:100px;height:100px;background-color:red;color:white">Hello</div>
+</div>
+<div class="info_box">Note: the <tt>&ltdiv></tt> element is used as a container.</div>
+<h4>Some common CSS</h4>
+<ul>
+<li>The <tt>width</tt> and <tt>height</tt> properties</li>
+<li>The <tt>background-color</tt> property</li>
+<li>The <tt>color</tt> (text color) property</li>
+<li>The <tt>text-align</tt> property (posible value: center)</li>
+<li>The <tt>font-size</tt> property</li>
+</ul>
+<!-- Page content end -->
+<a href="#">Jump to top</a><button style="margin:5px" onclick="location.href='lesson4.html'"><- Previous lesson</button><button style="float:right;margin:5px" onclick="location.href='lesson6.html'">Next lesson -></button>
+<script>
+if(navigator.onLine){}
+else{document.write("<b>Error!</b> Please check your internet connection.");}</script>
+</body>
+</html>
