@@ -1,5 +1,6 @@
 
 var mobileMessage = "<p id='msg'><b>This web application is not optimised for mobile devices!</b><button onclick="hideMsg()">Close</button></p>";
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 // toggle menu status
 
@@ -39,6 +40,6 @@ function hideMsg() {
 
 // check if mobile user
 
-if (typeof window.orientation !== 'undefined') {
+if (isMobile) {
 	document.write(mobileMessage);
 }
