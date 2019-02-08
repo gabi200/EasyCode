@@ -40,5 +40,5 @@ function hideMsg() {
 // check if mobile user
 
 if (typeof window.orientation !== 'undefined') {
-	document.write(mobileMessage)
+	document.write(mobileMessage);
 }
