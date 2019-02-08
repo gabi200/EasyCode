@@ -43,3 +43,7 @@ function hideMsg() {
 if (isMobile) {
 	document.write(mobileMessage);
 }
+
+// add favicon
+
+document.write('<link rel="icon" href="http://example.com/favicon.png">')
