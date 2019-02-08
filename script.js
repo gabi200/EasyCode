@@ -46,4 +46,4 @@ if (isMobile) {
 
 // add favicon
 
-document.write('<link rel="icon" href="http://example.com/favicon.png">')
+document.write('<link rel="icon" href="res/images/logo.png">')
