@@ -31,4 +31,4 @@ function open_editor() {
 
 // add favicon
 
-document.write('<link rel="icon" href="res/images/logo.png">')
+document.write('<link rel="icon" href="/res/images/logo.png">')
