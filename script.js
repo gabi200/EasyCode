@@ -21,7 +21,7 @@ if ( localStorage.newUser != 0 ) {
 
 // info popup
 
-var info_msg = "EasyCode™ v1.0.2\nBy Georgescu Gabriel\n©2019 Gabi Software.All rights reserved.";
+var info_msg = "EasyCode™ v1.0.3\nBy Georgescu Gabriel\n©2019 Gabi Software.All rights reserved.";
 
 // open code editor
 
@@ -31,7 +31,12 @@ function open_editor() {
 
 // add favicon
 
-document.write('<link rel="icon" href="/res/images/logo.png">')
+if ( window.location.pathname != "/" || window.location.pathname != "/index.html" ) {
+	document.write('<link rel="icon" href="../images/logo.png">') 
+}
+else {
+        document.write('<link rel="icon" href="res/images/logo.png">')
+}
 
 // copy protection
 
