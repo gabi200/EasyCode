@@ -32,3 +32,8 @@ function open_editor() {
 // add favicon
 
 document.write('<link rel="icon" href="/res/images/logo.png">')
+
+// copy protection
+
+if ( window.location.hostname != "gabi200.github.io" ) {
+	document.write("<b>Error! This web application can't run on this server!</b>") }
