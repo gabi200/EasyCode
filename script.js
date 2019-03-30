@@ -50,7 +50,7 @@ function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 };
 
-var mobile_width = "";
+var mobile_width = "8cm";
 var mobilecheck = isMobileDevice();
 
 // debugging line
