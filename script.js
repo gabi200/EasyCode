@@ -50,11 +50,11 @@ function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 };
 
-var mobile_width = screen.width + "px";
+var mobile_width = "100%";
 var mobilecheck = isMobileDevice();
 
 // debugging line
-document.write(mobilecheck);
+// document.write(mobilecheck);
 
 if ( window.mobilecheck == true ) {
 	document.getElementsByClassName("code").style.width = mobile_width;
