@@ -52,9 +52,14 @@ window.mobilecheck = function() {
   return check;
 };
 
+var mobile_width = screen.width + "px"
+
+// debugging line
+document.write(window.mobilecheck)
+
 if ( window.mobilecheck == true ) {
-	document.getElementsByClassName("code").style.width = "100%";
-	document.getElementsByClassName("box").style.width = "100%";
-	document.getElementsByClassName("dynamic_box").style.width = "100%";
-	document.getElementsByClassName("info_box").style.width = "100%";
+	document.getElementsByClassName("code").style.width = mobile_width;
+	document.getElementsByClassName("box").style.width = mobile_width;
+	document.getElementsByClassName("dynamic_box").style.width = mobile_width;
+	document.getElementsByClassName("info_box").style.width = mobile_width;
 }
