@@ -56,5 +56,5 @@ var mobilecheck = isMobileDevice();
 // document.write(mobilecheck);
 
 if ( window.mobilecheck == true ) {
-	document.write("This web app is not optimised for mobile devices.");
+	document.write("<div id='notice'>This web app is not optimised for mobile devices.</div>");
 }
