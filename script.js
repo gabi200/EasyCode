@@ -50,15 +50,11 @@ function isMobileDevice() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 };
 
-var mobile_width = "8cm";
 var mobilecheck = isMobileDevice();
 
 // debugging line
 // document.write(mobilecheck);
 
 if ( window.mobilecheck == true ) {
-	document.getElementsByClassName("code").style.width = mobile_width;
-	document.getElementsByClassName("box").style.width = mobile_width;
-	document.getElementsByClassName("dynamic_box").style.width = mobile_width;
-	document.getElementsByClassName("info_box").style.width = mobile_width;
+	document.write("This web app is not optimised for mobile devices.");
 }
