@@ -41,7 +41,7 @@ else {
 // copy protection
 
 if ( window.location.hostname != "gabi200.github.io" ) {
-	document.write("<b>Error! This web application can't run on this server!</b>")
+	document.write("<div id='notice'><b>Error! This web application can't run on this server!</b></div>")
 }
 
 // check if it's a mobile device
