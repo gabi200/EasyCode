@@ -7,7 +7,6 @@ function toggle_view(id) {
         x.style.display = "block";
     } else {
         x.style.display = "none";
-        $(id).slideDown("slow");
     }
 }
 
