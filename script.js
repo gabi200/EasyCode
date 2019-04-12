@@ -7,6 +7,7 @@ function toggle_view(id) {
         x.style.display = "block";
     } else {
         x.style.display = "none";
+        $(id).slideDown("slow");
     }
 }
 
@@ -58,9 +59,3 @@ var mobilecheck = isMobileDevice();
 if ( window.mobilecheck == true ) {
 	document.write("<div id='notice'>This web app is not optimised for mobile devices.</div>");
 }
-
-// open course by the click on the box
-
-$("#html_box").click(function(){
-  window.location.href = "res/html_couse/index.html";
-});
