@@ -68,6 +68,9 @@ color:white;
 .menu_item {
 color:white;
 }
+.menu_item:hover {
+color:gray;
+}
 #info_btn {
 float:right;
 background-color:transparent;
