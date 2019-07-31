@@ -109,8 +109,8 @@ width:20%;
 a {
 color:#4286f4;
 }
-a:hover {
-background-color: #0d5bd9
+body a:hover {
+color: #0d5bd9
 }
 .info_box {
 margin:10px;
